@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
         with:
           fetch-depth: 0
 
@@ -34,7 +34,7 @@ jobs:
         with:
           go-version-file: 'go.mod'
 
-      - uses: ko-build/setup-ko@v0.7
+      - uses: ko-build/setup-ko@d006021bd0c28d1ce33a07e7943d48b079944c8d # v0.9
 
       - uses: goreleaser/goreleaser-action@v6
         env:
